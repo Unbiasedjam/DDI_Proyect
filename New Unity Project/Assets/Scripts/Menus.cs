@@ -5,28 +5,65 @@ using UnityEngine.UI;
 
 public class Menus : MonoBehaviour {
 
-	public GameObject PanelPrincipal;
 	public GameObject PanelSecundario;
-	public GameObject PanelTerceario;
-	public GameObject PanelCuarto;
+	public GameObject Panel1;
+	public GameObject Panel2;
+	public GameObject Panel3;
+	public GameObject Panel4;
+	public GameObject Panel5;
+	public GameObject Panel6;
+	public GameObject Panel7;
+	public GameObject Panel8;
 	
 	// Use this for initialization
 	public void Start () {
-		PanelTerceario.SetActive(false);	
-		PanelCuarto.SetActive(false);
+		Panel1.SetActive(false);
 	}
-
-	public void Maestro(){
+	public void Maestro1(){
 		PanelSecundario.SetActive(false);
-		PanelTerceario.SetActive(true);	
+		Panel1.SetActive(true);	
 	}
-
-	public void Materia(){
-		PanelTerceario.SetActive(false);
-		PanelCuarto.SetActive(true);
+	public void Maestro2(){
+		PanelSecundario.SetActive(false);
+		Panel2.SetActive(true);	
 	}
-
-	public void Horario(){
+	public void Maestro3(){
+		PanelSecundario.SetActive(false);
+		Panel3.SetActive(true);	
+	}
+	public void Maestro4(){
+		PanelSecundario.SetActive(false);
+		Panel4.SetActive(true);	
+	}
+	public void Maestro5(){
+		PanelSecundario.SetActive(false);
+		Panel5.SetActive(true);	
+	}
+	public void Maestro6(){
+		PanelSecundario.SetActive(false);
+		Panel6.SetActive(true);	
+	}
+	public void Maestro7(){
+		PanelSecundario.SetActive(false);
+		Panel7.SetActive(true);	
+	}
+	public void Maestro8(){
+		PanelSecundario.SetActive(false);
+		Panel8.SetActive(true);	
+	}
+	public void Salir(){
 		Application.Quit();
+	}
+
+	public void Return(){
+		Panel1.SetActive(false);
+		Panel2.SetActive(false);
+		Panel3.SetActive(false);
+		Panel4.SetActive(false);
+		Panel5.SetActive(false);
+		Panel6.SetActive(false);
+		Panel7.SetActive(false);
+		Panel8.SetActive(false);
+		PanelSecundario.SetActive(true);
 	}
 }
